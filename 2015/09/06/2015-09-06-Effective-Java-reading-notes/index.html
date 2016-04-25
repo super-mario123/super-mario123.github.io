@@ -3,31 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>（转载）Git 常用命令和 Git Flow 梳理 | Sprite&#39;s Blog</title>
+  <title>Effective Java 读书笔记（三） | Sprite&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="（转载）Git 常用命令和 Git Flow 梳理标签（空格分隔）： git
+  <meta name="description" content="Effective Java 读书笔记（三）标签： 读书
 
-原文地址—-&amp;gt;git">
+
+Stay hungry, Stay foolish. 啃书啃书。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="（转载）Git 常用命令和 Git Flow 梳理">
-<meta property="og:url" content="http://yoursite.com/2015/11/21/2015-11-21-Git-Flow/index.html">
+<meta property="og:title" content="Effective Java 读书笔记（三）">
+<meta property="og:url" content="http://yoursite.com/2015/09/06/2015-09-06-Effective-Java-reading-notes/index.html">
 <meta property="og:site_name" content="Sprite's Blog">
-<meta property="og:description" content="（转载）Git 常用命令和 Git Flow 梳理标签（空格分隔）： git
+<meta property="og:description" content="Effective Java 读书笔记（三）标签： 读书
 
-原文地址—-&amp;gt;git">
-<meta property="og:image" content="http://7xob7d.com1.z0.glb.clouddn.com/git.png">
-<meta property="og:image" content="http://7xob7d.com1.z0.glb.clouddn.com/git_flow.png">
-<meta property="og:image" content="http://jonyfang.github.io/images/git_flow/develop_branch.png">
-<meta property="og:image" content="http://7xob7d.com1.z0.glb.clouddn.com/feature_branches.png">
-<meta property="og:image" content="http://7xob7d.com1.z0.glb.clouddn.com/git_merge_noff.png">
-<meta property="og:image" content="http://7xob7d.com1.z0.glb.clouddn.com/hotfixes.png">
-<meta property="og:updated_time" content="2016-04-24T14:25:51.100Z">
+
+Stay hungry, Stay foolish. 啃书啃书。">
+<meta property="og:updated_time" content="2016-04-25T02:36:51.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="（转载）Git 常用命令和 Git Flow 梳理">
-<meta name="twitter:description" content="（转载）Git 常用命令和 Git Flow 梳理标签（空格分隔）： git
+<meta name="twitter:title" content="Effective Java 读书笔记（三）">
+<meta name="twitter:description" content="Effective Java 读书笔记（三）标签： 读书
 
-原文地址—-&amp;gt;git">
-<meta name="twitter:image" content="http://7xob7d.com1.z0.glb.clouddn.com/git.png">
+
+Stay hungry, Stay foolish. 啃书啃书。">
   
     <link rel="alternative" href="/atom.xml" title="Sprite&#39;s Blog" type="application/atom+xml">
   
@@ -248,11 +244,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2015-11-21-Git-Flow" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2015-09-06-Effective-Java-reading-notes" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/21/2015-11-21-Git-Flow/" class="article-date">
-      <time datetime="2015-11-21T13:57:11.000Z" itemprop="datePublished">2015-11-21</time>
+      <a href="/2015/09/06/2015-09-06-Effective-Java-reading-notes/" class="article-date">
+      <time datetime="2015-09-06T13:57:11.000Z" itemprop="datePublished">2015-09-06</time>
 </a>
     </div>
   
@@ -265,7 +261,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      （转载）Git 常用命令和 Git Flow 梳理
+      Effective Java 读书笔记（三）
     </h1>
   
 
@@ -274,11 +270,15 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Git/">Git</a>
+    <a class="article-category-link" href="/categories/reading/">reading</a>
     </div>
 
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -286,160 +286,35 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="（转载）Git-常用命令和-Git-Flow-梳理"><a href="#（转载）Git-常用命令和-Git-Flow-梳理" class="headerlink" title="（转载）Git 常用命令和 Git Flow 梳理"></a>（转载）Git 常用命令和 Git Flow 梳理</h1><p>标签（空格分隔）： git</p>
+        <h1 id="Effective-Java-读书笔记（三）"><a href="#Effective-Java-读书笔记（三）" class="headerlink" title="Effective Java 读书笔记（三）"></a>Effective Java 读书笔记（三）</h1><p>标签： 读书</p>
 <hr>
-<p>原文地址—-&gt;<a href="http://jonyfang.com/blog/2015/11/12/git_command_and_git_branching_model/#disqus_thread" target="_blank" rel="external">git</a></p>
-<p><img src="http://7xob7d.com1.z0.glb.clouddn.com/git.png" alt="git" title="git"></p>
-<a id="more"></a>
-<p>用 git 有一段时间了，之前没有详细地了解 git flow，导致协作过程中或多或少出现了一些头疼问题。最近静下心来理了下 git flow 的整个流程，再回头看开朗了不少，总结到这里。介绍的是一些常用的 git 基础命令和 git flow，当然也很重要的，过程中自己在 Github 上建了一个模拟的 <a href="https://github.com/JonyFang/GitTestDemo" target="_blank" rel="external">Demo</a> 用来熟悉 git flow。其实从理解到动手完成还是有点距离的，笨人有笨法嘛。如有不准确的地方欢迎指正。: )</p>
-<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><p>这里列出了一些比较常用的 git 命令，每个命令介绍后面都带一个简单例子～</p>
-<p> <strong>1. 新开分支</strong></p>
-<pre><code>$ git branch 新分支名
-
-#新建分支 develop
-$ git branch develop
-</code></pre><p><strong>2. 切换到另一个分支</strong></p>
-<pre><code> $ git checkout 分支名
-
-#切换到 develop 分支
-$ git checkout develop
-</code></pre><p><strong>3. 新开分支并切换到新分支</strong></p>
-<pre><code>$ git checkout -b 新分支名
-
-#新开 develop 分支，并切换到此分支
-$ git checkout -b develop
-</code></pre><p><strong>4. 查看分支列表</strong></p>
-<pre><code>$ git branch -a
-</code></pre><p>头部带 remotes/origin 的，表示远程分支</p>
-<p><strong>5. 查看远程分支列表</strong></p>
-<pre><code>$ git branch -r
-</code></pre><p><strong>6. 向远程仓库提交本地新开的分支</strong></p>
-<pre><code>$ git push origin 新开分支名
-
-#提交新建的 develop 分支
-$ git push origin develop
-</code></pre><p><strong>7. 删除远程分支</strong></p>
-<pre><code>$ git push origin --delete 远程分支名
-
-#删除远程仓库中的 develop 分支
-$ git push origin --delete develop
-</code></pre><p><strong>8. 删除本地分支</strong></p>
-<pre><code>$ git branch -d 分支名
-
-#删除本地的 develop 分支
-$ git branch -d develop
-</code></pre><p><strong>9. 更新分支列表信息</strong></p>
-<pre><code>$ git fetch -p
-</code></pre><p>用于协作时，项目队友添加或删除了远程分支的分支，可以通过这种方式来刷新分支列表信息</p>
-<hr>
-<h2 id="Git-Flow-梳理"><a href="#Git-Flow-梳理" class="headerlink" title="Git Flow 梳理"></a>Git Flow 梳理</h2><p><img src="http://7xob7d.com1.z0.glb.clouddn.com/git_flow.png" alt="Git Flow" title="git flow 完整图示"></p>
-<p>Git 开发模式本质上是一套流程，团队每个成员遵守这套流程以确保完成可控的软件开发过程。<a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="external">原文参考</a></p>
-<hr>
-<h3 id="1-主要分支"><a href="#1-主要分支" class="headerlink" title="1.主要分支"></a><strong>1.主要分支</strong></h3><p>在远程仓库中有两个主要分支的生命期可以无限长，分别是：<br><code>Master</code><br><code>Develop</code><br><img src="http://jonyfang.github.io/images/git_flow/develop_branch.png" alt="" title="develop 和 master 关系图"></p>
-<p><strong>master 分支（origin/master）</strong><br>代码仓库中有且仅有的一条主分支，默认为 master ，在创建版本库时会自动创建。所有提供给用户使用的正式版本的源码，都会在这个分支上发布。也就是说主分支 master 用来发布重大版本。</p>
-<p><strong>develop 分支（origin/develop）</strong><br>日常开发工作都会在 develop 分支上面完成。develop 分支可以用来生成代码的最新隔夜版本（nightly builds）。</p>
-<p><strong>创建 <code>develop</code> 分支</strong></p>
-<pre><code>$ git checkout -b develop master
-
-#push develop 到远程仓库
-$ git push origin develop
-</code></pre><p>当我们在<code>develop</code>上完成了新版本的功能，最终会把所有的修改 <code>merge</code> 到 <code>master</code> 分支。针对每次 <code>master</code> 的修改都会打一个 Tag 作为可发布产品的版本号。</p>
-<hr>
-<h3 id="2-辅助分支"><a href="#2-辅助分支" class="headerlink" title="2.辅助分支"></a><strong>2.辅助分支</strong></h3><p>开发过程中不可能项目人所有都在一个 <code>develop</code> 分支中开发，版本管理会很混乱。所以除了主要分支外，我们还需要一些辅助分支来协助团队成员间的并行开发。</p>
-<p><strong>所用到的辅助分支大体分三类：</strong></p>
-<ul>
-<li><strong>Feature branches（功能分支）</strong></li>
-<li><strong>Release branches（预发布分支）</strong></li>
-<li><strong>Hotfix branches（热修复分支）</strong></li>
-</ul>
-<p>通过分支名我们能知道各类型分支都有特定作用，对于他们各自的起始分支和最终的合并分支也都有严格规定。呼，虽然可能会麻烦点，但让人一目了然的效果还是很诱人的。</p>
-<p>下面逐一介绍下各类型分支的创建使用和移除方法，过程中我在 Github 中创建一个虚拟的项目用来熟悉整个流程，或许你也可以像我一样做一遍。哈，动手总会有意外收获嘛。废话少说，继续正题～</p>
-<h4 id="2-1-Feature-branches（功能分支）"><a href="#2-1-Feature-branches（功能分支）" class="headerlink" title="2.1.Feature branches（功能分支）"></a><strong>2.1.Feature branches（功能分支）</strong></h4><p><img src="http://7xob7d.com1.z0.glb.clouddn.com/feature_branches.png" alt="feature" title="feature_branches"></p>
-<p><strong>应用场景：</strong><br>当要开始一个新功能的开发时，我门可以创建一个 Feature branche 。等待这个新功能开发完成并确定应用到新版本中就合并回 develop，那么如果不是就会被很遗憾的丢弃。。。</p>
-<p><strong>应用规则：</strong></p>
-<ol>
-<li>从 <code>develop</code> 分支创建，最终合并回 <code>develop</code> 分支;</li>
-<li>分支名：feature／＊;</li>
-</ol>
-<p>Tips：这里很多地方说用 <strong>feature-＊</strong> 的方式命名，因为公司项目中用的 <strong>feature／＊</strong>方式，也就习惯了，其实意思是一样的。</p>
-<p><strong>(1).Creat a feature branch</strong></p>
-<pre><code>$ git checkout -b feature/test develop
-</code></pre><p>do something in <code>feature/test</code> branch</p>
-<p>push 本地 <code>feature/test</code> 到远处代码库；</p>
-<pre><code>$ git push origin feature/test
-</code></pre><p><strong>(2).切换到 develop 合并 feature/test</strong></p>
-<pre><code>$ git checkout develop
-
-$ git merge --no-ff feature/test
-</code></pre><p>”- -no-ff” 的作用是创建一个新的 “commit” 对象用于当前合并操作。这样既可以避免丢失该功能分支的历史存在信息，又可以集中该功能分支所有历史提交。并且如果想回退版本也会比较方便。<br><img src="http://7xob7d.com1.z0.glb.clouddn.com/git_merge_noff.png" alt="" title="git merge - -no-ff 图示"></p>
-<p><strong>(3).移除本地和远程仓库的 feature/test 分支</strong></p>
-<pre><code>$ git branch -d feature/test
-
-$ git push origin --delete feature/test
-</code></pre><h4 id="2-2-Release-branches（预发布分支）"><a href="#2-2-Release-branches（预发布分支）" class="headerlink" title="2.2.Release branches（预发布分支）"></a><strong>2.2.Release branches（预发布分支）</strong></h4><p><strong>应用场景：</strong><br>“Release branches” 用来做新版本发布前的准备工作，在上面可以做一些小的 bug 修复、准备发布版本号等等和发布有关的小改动，其实已经是一个比较成熟的版本了。另外这样我们既可以在预发布分支上做一些发布前准备，也不会影响 “develop” 分支上下一版本的新功能开发。</p>
-<p><strong>应用规则：</strong></p>
-<ol>
-<li>从 <code>develop</code> 分支创建，最终合并回 <code>develop</code> 和 <code>master</code>;</li>
-<li>分支名：release-＊;</li>
-</ol>
-<p><strong>(1).Creat a release branch</strong></p>
-<pre><code>$ git checkout -b release-1.1 develop
-
-#push 到远程仓库（可选）
-$ git push origin release-1.1
-</code></pre><p>do something in <code>release-1.1</code> branch</p>
-<p><strong>(2).切换到 master 合并 release-1.1</strong></p>
-<pre><code>$ git checkout master
-
-$ git merge --no-ff release-1.1
-
-$ git tag -a 1.1
-
-$ git push origin 1.1
-</code></pre><p>当我们的 release-1.1 的 Review 完成，也就预示着我们可以发布了。打上相应的版本号，再 <strong>push</strong> 到远程仓库。</p>
-<p><strong>(3).切换到 develop 合并 release-1.1</strong></p>
-<p>预发布分支所做的修改同时也要合并回 <strong>develop</strong></p>
-<pre><code>$ git checkout develop
-
-$ git merge --no-ff release-1.1
-</code></pre><p><strong>(4).移除本地和远程仓库的 release-1.1</strong></p>
-<pre><code>$ git branch -d release-1.1
-
-$ git push origin --delete release-1.1
-</code></pre><h4 id="2-3-Hotfix-branches（热修复分支）"><a href="#2-3-Hotfix-branches（热修复分支）" class="headerlink" title="2.3.Hotfix branches（热修复分支）"></a><strong>2.3.Hotfix branches（热修复分支）</strong></h4><p><img src="http://7xob7d.com1.z0.glb.clouddn.com/hotfixes.png" alt="" title="Hotfix branches 图示"></p>
-<p><strong>应用场景：</strong><br>“Hotfix branches” 主要用于处理线上版本出现的一些需要立刻修复的 bug 情况.</p>
-<p><strong>应用规则：</strong></p>
-<ol>
-<li>从 <code>master</code> 分支上当前版本号的 tag 处切出，也就是从最新的 <code>master</code> 上创建，最终合并回 <code>develop</code> 和 <code>master</code>;</li>
-<li>分支名：hotfix-＊;</li>
-</ol>
-<p><strong>(1).Creat a fixbug branch</strong></p>
-<pre><code>$ git checkout -b fixbug-1.1.1 master
-
-#push 到远程仓库（可选）
-$ git push origin fixbug-1.1.1
-</code></pre><p>do something in <code>fixbug-1.1.1</code> branch</p>
-<p><strong>(2).切换到 master 合并 fixbug-1.1.1</strong></p>
-<pre><code>$ git checkout master
-
-$ git merge --no-ff fixbug-1.1.1
-
-$ git tag -a 1.1.1
-
-$ git push origin 1.1.1`
-</code></pre><p>bug 修复完成，合并回 <code>master</code> 并打上版本号；</p>
-<p><strong>(3).切换到 develop 合并 fixbug－1.1.1</strong></p>
-<pre><code>$ git checkout develop
-
-$ git merge --no-ff fixbug-1.1.1
-</code></pre><p><strong>(4).移除本地和远程仓库的 fixbug-1.1.1</strong></p>
-<pre><code>$ git branch -d fixbug-1.1.1
-
-$ git push origin --delete fixbug-1.1.1
-</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>啊哈，又到尾声了。上面的 <code>Git 常用命令</code>和 <code>Git Flow</code> 只是一些基本常识，并没有什么新的东西加入。在平时的团队协作中有些对于我自身而言还是比较新鲜的，比如 tag ，这些一般都交给老大来弄（因为他要 review）：D 。好像跑偏了。。。对自己而言，理一遍后的收获还是不小的，对 Git Flow 的整个流程有了大概的了解，但具体每个 git 命令内部是怎么处理的呢，这个留到后面再梳理一下～</p>
 <blockquote>
-<p>参考内容： <br><br><a href="http://www.ruanyifeng.com/blog/2012/07/git.html" target="_blank" rel="external">Git分支管理策略 </a><br><br><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="external">A successful Git branching model</a></p>
+<p>Stay hungry, Stay foolish. 啃书啃书。</p>
 </blockquote>
+<a id="more"></a>
+<h3 id="第七条：避免使用终结方法"><a href="#第七条：避免使用终结方法" class="headerlink" title="第七条：避免使用终结方法"></a>第七条：避免使用终结方法</h3><p>终结方法（<code>finalizer</code>）通常是不可预测的，也是很危险的，一般情况下是不必要的。终结方法的缺点在于不能保证会被及时的执行。这意味着注重时间的任务不应该由终结方法来执行。</p>
+<p>延迟终结过程并不只是一个理论问题。在很少见的情况下，为类提供终结方法，可能会随意地延迟其实例的回收过程。一个长期运行的GUI应用程序，该应用程序可能会莫名其妙的出现<code>OutOfMemoryError</code>错误而死掉。分析表明，该应用程序死掉的时候，其终结方法队列中有数千个图形对象正在等待被终结和回收。遗憾的是，终结方法的优先级比其他线程的优先级要低的多。所以图像的终结速度达不到它们进入队列的速度。<code>Java</code>语言规范并不保证哪个线程将会执行终结方法，所以，除了不使用终结方法之外，并没有很轻便的方法来避免这样的问题。</p>
+<h3 id="第八条：覆盖equals时请遵守通用约定"><a href="#第八条：覆盖equals时请遵守通用约定" class="headerlink" title="第八条：覆盖equals时请遵守通用约定"></a>第八条：覆盖equals时请遵守通用约定</h3><p>覆盖<code>equals</code>方法看起来视乎很简单，但是有许多覆盖方式会导致错误，并且后果非常严重。最好的避免这类问题的方法就是不覆盖<code>equals</code>方法，在这种情况下，类的每个实例都只与它自身相等。如果满足了以下任何一个条件，这正是所期望的结果：</p>
+<ul>
+<li><strong>类的每个实例本质上都是唯一的。</strong>对于代表活动实体而不是值（<code>value</code>）的类来说确实如此，例如<code>Thread</code>。<code>Object</code>提供的equals实现对于这些类来说是正确的行为。</li>
+<li><strong>不关心类是否提供了“逻辑相等（<code>logical equality</code>）”的测试功能。</strong>例如，<code>java.util.Random</code>覆盖了<code>euqals</code>,已检查两个<code>Random</code>实例是否产生相同的随机数序列，但是设计者并不认为客户需要或者期望这样的功能。从<code>Object</code>继承得到的<code>equals</code>实现已经足够了。</li>
+<li><strong>超类已经覆盖了<code>equals</code>，从超类继承过来的行为对于子类也是合适的。</strong>例如，大多数的<code>Set</code>实现都从<code>AbstractSet</code>继承<code>equals</code>实现，<code>List</code>实现从<code>AbstractList</code>继承<code>equals</code>实现，<code>Map</code>实现从<code>AbstractMap</code>继承<code>equals</code>实现。</li>
+<li><strong>类是私有的或者是包级私有的，可以确定它的<code>equals</code>方法永远不会调用。</strong>在这种情况下，无疑是应该覆盖<code>equals</code>方法的，以防它被意外调用：</li>
+</ul>
+<pre><code>@Override
+    public boolean equals(Object o){
+        throw new AssertionError();//Method is never called
+    }
+</code></pre><p>那么，什么时候应该覆盖<code>Object.equals()</code>呢？如果类具有自己特有的“逻辑相等”概念（不同于对象等同的概念），而且超类还没有覆盖<code>equals</code>以实现期望的行为，这时我们就需要覆盖<code>equals</code>方法。这通常属于“值类（<code>value class</code>）”的情形。值类仅仅是一个表示值得类，例如<code>Integer</code>或者<code>Date</code>。</p>
+<p>有一种“值类”不需要覆盖<code>equals</code>方法，即用实例受控（见第1条）确保“每个值至多存在一个对象”的类。枚举就属于这种类。对于这样的类而言，逻辑相同与对象等同是一回事，因此<code>Object</code>的<code>equals</code>方法就等同与逻辑意义上的<code>equals</code>方法。</p>
+<p>在覆盖<code>equals</code>方法的时候，你必须遵守它的通用约定。下面是约定内容：<br>    <code>equals</code>方法实现等价关系：</p>
+<ul>
+<li><strong>自反性（reflexive）</strong>。对于任何非<code>null</code>的引用值<code>x</code>，<code>x.equals(x)</code>必须返回<code>true</code>。</li>
+<li><strong>对称性（symmetric）</strong>。对于任何非<code>null</code>的引用值<code>x</code>和<code>y</code>,当且仅当<code>y.equals(x)</code>返回<code>true</code>，<code>x.equals(y)</code>必须返回<code>true</code>。</li>
+<li><strong>传递性（transitive）</strong>。对于任何非<code>null</code>的引用值<code>x</code>，<code>y</code>和<code>z</code>，如果<code>x.equals(y)</code>返回<code>true</code>，并且<code>y.equals(z)</code>也返回<code>true</code>，那么<code>x.equals(z)</code>也返回<code>true</code>。</li>
+<li><strong>一致性（consistent）</strong>。对于任何非<code>null</code>的引用值<code>x</code>和<code>y</code>，只要<code>equals</code>的比较操作在对象中所用的信息没有被修改，多次调用<code>x.equals(y)</code>就会一致返回<code>true</code>，或者一致地返回<code>false</code>。</li>
+<li>对于任何非<code>null</code>的引用值<code>x</code>，<code>x.equals(null)</code>必须返回<code>false</code>。</li>
+</ul>
 
       
     </div>
@@ -448,13 +323,13 @@ $ git push origin --delete fixbug-1.1.1
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/11/21/2015-11-21-Git-Flow/">（转载）Git 常用命令和 Git Flow 梳理</a></p>
+        <p><span>本文标题:</span><a href="/2015/09/06/2015-09-06-Effective-Java-reading-notes/">Effective Java 读书笔记（三）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Sprite 的个人博客">Sprite</a></p>
-        <p><span>发布时间:</span>2015年11月21日 - 21时57分</p>
-        <p><span>最后更新:</span>2016年04月24日 - 22时25分</p>
+        <p><span>发布时间:</span>2015年09月06日 - 21时57分</p>
+        <p><span>最后更新:</span>2016年04月25日 - 10时36分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/11/21/2015-11-21-Git-Flow/" title="（转载）Git 常用命令和 Git Flow 梳理">http://yoursite.com/2015/11/21/2015-11-21-Git-Flow/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/11/21/2015-11-21-Git-Flow/　　作者: Sprite" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/09/06/2015-09-06-Effective-Java-reading-notes/" title="Effective Java 读书笔记（三）">http://yoursite.com/2015/09/06/2015-09-06-Effective-Java-reading-notes/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/09/06/2015-09-06-Effective-Java-reading-notes/　　作者: Sprite" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -467,18 +342,18 @@ $ git push origin --delete fixbug-1.1.1
 
 <nav id="article-nav">
   
-    <a href="/2016/04/23/2016-04-23-ubuntu-command/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/09/06/2015-09-04-Effective-Java-reading-notes/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          （转）Ubuntu 常用命令总结
+          Effective Java 读书笔记（一）
         
       </div>
     </a>
   
   
-    <a href="/2015/11/15/2015-11-15-Material-Design/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Material Design</div>
+    <a href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Android Activity 的生命周期</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -489,7 +364,7 @@ $ git push origin --delete fixbug-1.1.1
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#（转载）Git-常用命令和-Git-Flow-梳理"><span class="toc-number">1.</span> <span class="toc-text">（转载）Git 常用命令和 Git Flow 梳理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-常用命令"><span class="toc-number">1.1.</span> <span class="toc-text">Git 常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-Flow-梳理"><span class="toc-number">1.2.</span> <span class="toc-text">Git Flow 梳理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-主要分支"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.主要分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-辅助分支"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.辅助分支</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-Feature-branches（功能分支）"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">2.1.Feature branches（功能分支）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-Release-branches（预发布分支）"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">2.2.Release branches（预发布分支）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-Hotfix-branches（热修复分支）"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">2.3.Hotfix branches（热修复分支）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">1.3.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Effective-Java-读书笔记（三）"><span class="toc-number">1.</span> <span class="toc-text">Effective Java 读书笔记（三）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第七条：避免使用终结方法"><span class="toc-number">1.0.1.</span> <span class="toc-text">第七条：避免使用终结方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第八条：覆盖equals时请遵守通用约定"><span class="toc-number">1.0.2.</span> <span class="toc-text">第八条：覆盖equals时请遵守通用约定</span></a></li></ol></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -551,7 +426,7 @@ $ git push origin --delete fixbug-1.1.1
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2015/11/21/2015-11-21-Git-Flow/" data-title="（转载）Git 常用命令和 Git Flow 梳理" data-url="http://yoursite.com/2015/11/21/2015-11-21-Git-Flow/"></div>
+    <div class="ds-thread" data-thread-key="2015/09/06/2015-09-06-Effective-Java-reading-notes/" data-title="Effective Java 读书笔记（三）" data-url="http://yoursite.com/2015/09/06/2015-09-06-Effective-Java-reading-notes/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -574,13 +449,13 @@ $ git push origin --delete fixbug-1.1.1
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/04/23/2016-04-23-ubuntu-command/" title="上一篇: （转）Ubuntu 常用命令总结">
+            <a href="/2015/09/06/2015-09-04-Effective-Java-reading-notes/" title="上一篇: Effective Java 读书笔记（一）">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2015/11/15/2015-11-15-Material-Design/" title="下一篇: Material Design">
+            <a href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/" title="下一篇: Android Activity 的生命周期">
                 <i class="fa fa-angle-right"></i>
             </a>
         
