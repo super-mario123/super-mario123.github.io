@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Android Activity 的生命周期 | Sprite&#39;s Blog</title>
+  <title>Effective Java 读书笔记（三） | Sprite&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android Activity 的生命周期我写博客的目的主要是总结一下自己一段时间学到的一些重要的知识点，如果有些地方写的不对，或不妥，欢迎指出：">
+  <meta name="description" content="Effective Java 读书笔记（三）标签： 读书
+
+
+Stay hungry, Stay foolish. 啃书啃书。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Activity 的生命周期">
-<meta property="og:url" content="http://yoursite.com/2015/08/24/2015-08-24-Android-Activity-lifecycler/index.html">
+<meta property="og:title" content="Effective Java 读书笔记（三）">
+<meta property="og:url" content="http://yoursite.com/2015/09/23/2015-09-23-Effective-Java-reading-notes/index.html">
 <meta property="og:site_name" content="Sprite's Blog">
-<meta property="og:description" content="Android Activity 的生命周期我写博客的目的主要是总结一下自己一段时间学到的一些重要的知识点，如果有些地方写的不对，或不妥，欢迎指出：">
-<meta property="og:image" content="http://hi.csdn.net/attachment/201007/28/0_12803210018q71.gif">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519203913214">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519204112137">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519204431068">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519204627409">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519205015887">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519205219050">
-<meta property="og:image" content="http://img.blog.csdn.net/20150519205325709">
-<meta property="og:updated_time" content="2016-04-24T14:25:11.891Z">
+<meta property="og:description" content="Effective Java 读书笔记（三）标签： 读书
+
+
+Stay hungry, Stay foolish. 啃书啃书。">
+<meta property="og:updated_time" content="2016-04-25T02:41:44.569Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Activity 的生命周期">
-<meta name="twitter:description" content="Android Activity 的生命周期我写博客的目的主要是总结一下自己一段时间学到的一些重要的知识点，如果有些地方写的不对，或不妥，欢迎指出：">
-<meta name="twitter:image" content="http://hi.csdn.net/attachment/201007/28/0_12803210018q71.gif">
+<meta name="twitter:title" content="Effective Java 读书笔记（三）">
+<meta name="twitter:description" content="Effective Java 读书笔记（三）标签： 读书
+
+
+Stay hungry, Stay foolish. 啃书啃书。">
   
     <link rel="alternative" href="/atom.xml" title="Sprite&#39;s Blog" type="application/atom+xml">
   
@@ -244,11 +244,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2015-08-24-Android-Activity-lifecycler" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2015-09-23-Effective-Java-reading-notes" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/" class="article-date">
-      <time datetime="2015-08-24T13:57:11.000Z" itemprop="datePublished">2015-08-24</time>
+      <a href="/2015/09/23/2015-09-23-Effective-Java-reading-notes/" class="article-date">
+      <time datetime="2015-09-23T13:57:11.000Z" itemprop="datePublished">2015-09-23</time>
 </a>
     </div>
   
@@ -261,7 +261,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Android Activity 的生命周期
+      Effective Java 读书笔记（三）
     </h1>
   
 
@@ -270,11 +270,15 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Android/">Android</a>
+    <a class="article-category-link" href="/categories/reading/">reading</a>
     </div>
 
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -282,37 +286,35 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="Android-Activity-的生命周期"><a href="#Android-Activity-的生命周期" class="headerlink" title="Android Activity 的生命周期"></a>Android Activity 的生命周期</h1><p>我写博客的目的主要是总结一下自己一段时间学到的一些重要的知识点，如果有些地方写的不对，或不妥，欢迎指出：</p>
-<a id="more"></a>
-<ul>
-<li><strong>activity生命周期有哪些回调函数</strong></li>
-<li><strong>这些回调函数在何时被调用</strong></li>
-<li><strong>一个生命周期的实例</strong></li>
-</ul>
+        <h1 id="Effective-Java-读书笔记（三）"><a href="#Effective-Java-读书笔记（三）" class="headerlink" title="Effective Java 读书笔记（三）"></a>Effective Java 读书笔记（三）</h1><p>标签： 读书</p>
 <hr>
-<p>首先我们先来看一下android API中的一张生命周期图，这张图就很好的展示了android Activity的生命周期。</p>
-<p><img src="http://hi.csdn.net/attachment/201007/28/0_12803210018q71.gif" alt="android API 中生命周期图"></p>
-<p>从上图中我们可以看到Activity的生命周期的所有方法。</p>
+<blockquote>
+<p>Stay hungry, Stay foolish. 啃书啃书。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="第七条：避免使用终结方法"><a href="#第七条：避免使用终结方法" class="headerlink" title="第七条：避免使用终结方法"></a>第七条：避免使用终结方法</h3><p>终结方法（<code>finalizer</code>）通常是不可预测的，也是很危险的，一般情况下是不必要的。终结方法的缺点在于不能保证会被及时的执行。这意味着注重时间的任务不应该由终结方法来执行。</p>
+<p>延迟终结过程并不只是一个理论问题。在很少见的情况下，为类提供终结方法，可能会随意地延迟其实例的回收过程。一个长期运行的GUI应用程序，该应用程序可能会莫名其妙的出现<code>OutOfMemoryError</code>错误而死掉。分析表明，该应用程序死掉的时候，其终结方法队列中有数千个图形对象正在等待被终结和回收。遗憾的是，终结方法的优先级比其他线程的优先级要低的多。所以图像的终结速度达不到它们进入队列的速度。<code>Java</code>语言规范并不保证哪个线程将会执行终结方法，所以，除了不使用终结方法之外，并没有很轻便的方法来避免这样的问题。</p>
+<h3 id="第八条：覆盖equals时请遵守通用约定"><a href="#第八条：覆盖equals时请遵守通用约定" class="headerlink" title="第八条：覆盖equals时请遵守通用约定"></a>第八条：覆盖equals时请遵守通用约定</h3><p>覆盖<code>equals</code>方法看起来视乎很简单，但是有许多覆盖方式会导致错误，并且后果非常严重。最好的避免这类问题的方法就是不覆盖<code>equals</code>方法，在这种情况下，类的每个实例都只与它自身相等。如果满足了以下任何一个条件，这正是所期望的结果：</p>
 <ul>
-<li><strong>protected void onCreate(){}</strong></li>
-<li><strong>protected void onStart(){}</strong></li>
-<li><strong>protected void onResume(){}</strong></li>
-<li><strong>protected void onPause(){}</strong></li>
-<li><strong>protected void onRestart(){}</strong></li>
-<li><strong>protected void onStop(){}</strong></li>
-<li><strong>protected void onDestroy(){}</strong></li>
+<li><strong>类的每个实例本质上都是唯一的。</strong>对于代表活动实体而不是值（<code>value</code>）的类来说确实如此，例如<code>Thread</code>。<code>Object</code>提供的equals实现对于这些类来说是正确的行为。</li>
+<li><strong>不关心类是否提供了“逻辑相等（<code>logical equality</code>）”的测试功能。</strong>例如，<code>java.util.Random</code>覆盖了<code>euqals</code>,已检查两个<code>Random</code>实例是否产生相同的随机数序列，但是设计者并不认为客户需要或者期望这样的功能。从<code>Object</code>继承得到的<code>equals</code>实现已经足够了。</li>
+<li><strong>超类已经覆盖了<code>equals</code>，从超类继承过来的行为对于子类也是合适的。</strong>例如，大多数的<code>Set</code>实现都从<code>AbstractSet</code>继承<code>equals</code>实现，<code>List</code>实现从<code>AbstractList</code>继承<code>equals</code>实现，<code>Map</code>实现从<code>AbstractMap</code>继承<code>equals</code>实现。</li>
+<li><strong>类是私有的或者是包级私有的，可以确定它的<code>equals</code>方法永远不会调用。</strong>在这种情况下，无疑是应该覆盖<code>equals</code>方法的，以防它被意外调用：</li>
 </ul>
-<p>当我们第一次启动一个Activity是首先系统会依次调用：onCreate() –&gt;<br>onStart() –&gt;onResume(); 之后Activity就可以与用户交互。也就是Activity处于可见状态。当用户按下home键，或跳转到其他界面，系统会调用：onPause() –&gt; onStop(); Activity处于不可见状态。此时用户如果再次回到Activity, 则系统会先后调用：onRestart() –&gt; onStart() –&gt; onResume()。若退出当前应用，或Activity被回收则调用：onDestory()。若旋转屏幕时Activity会被重新创建，当前Activity会被销毁然后创建一个横屏的Activity，系统会先后调用：onStop() –&gt; onDestory() –&gt; onCreate() –&gt; onStart() –&gt; onResume()。</p>
-<p>  为了更好的理解，下面简单的写一个Demo，创建一个LifeCycle的应用，在MainActivity中重写Activity生命周期的7个方法，当生命周期的方法被调用的时候，会在Log打印一句话。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">package com.app.mario.lifecycle;</span><br><span class="line"></span><br><span class="line">import android.content.Intent;</span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.support.v7.app.AppCompatActivity;</span><br><span class="line">import android.util.Log;</span><br><span class="line">import android.view.Menu;</span><br><span class="line">import android.view.MenuItem;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.widget.Button;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public class MainActivity extends AppCompatActivity &#123;</span><br><span class="line"></span><br><span class="line">    private Button mJumpTo;</span><br><span class="line">    private static final String TAG = &quot;MainActivity&quot;;</span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        mJumpTo = (Button) findViewById(R.id.jumpTo);</span><br><span class="line">        mJumpTo.setOnClickListener(new View.OnClickListener() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void onClick(View v) &#123;</span><br><span class="line">                Intent intent = new Intent(MainActivity.this,SecondActivity.class);</span><br><span class="line">                startActivity(intent);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        Log.d(TAG,&quot;onCreate() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onStart() &#123;</span><br><span class="line">        super.onStart();</span><br><span class="line">        Log.d(TAG,&quot;onStart() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onResume() &#123;</span><br><span class="line">        super.onResume();</span><br><span class="line">        Log.d(TAG, &quot;onResume() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onPause() &#123;</span><br><span class="line">        super.onPause();</span><br><span class="line">        Log.d(TAG, &quot;onPause() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onStop() &#123;</span><br><span class="line">        super.onStop();</span><br><span class="line">        Log.d(TAG, &quot;onStop() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onRestart() &#123;</span><br><span class="line">        super.onRestart();</span><br><span class="line">        Log.d(TAG, &quot;onRestart() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onDestroy() &#123;</span><br><span class="line">        super.onDestroy();</span><br><span class="line">        Log.d(TAG, &quot;onDestroy() was called&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean onCreateOptionsMenu(Menu menu) &#123;</span><br><span class="line">        // Inflate the menu; this adds items to the action bar if it is present.</span><br><span class="line">        getMenuInflater().inflate(R.menu.menu_main, menu);</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean onOptionsItemSelected(MenuItem item) &#123;</span><br><span class="line">        // Handle action bar item clicks here. The action bar will</span><br><span class="line">        // automatically handle clicks on the Home/Up button, so long</span><br><span class="line">        // as you specify a parent activity in AndroidManifest.xml.</span><br><span class="line">        int id = item.getItemId();</span><br><span class="line"></span><br><span class="line">        //noinspection SimplifiableIfStatement</span><br><span class="line">        if (id == R.id.action_settings) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return super.onOptionsItemSelected(item);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第一次启动时MainActivity<br><img src="http://img.blog.csdn.net/20150519203913214" alt="MainActivity"></p>
-<p>在Logcat中可以看到那些方法被调用了：<br><img src="http://img.blog.csdn.net/20150519204112137" alt="Log1"><br>系统依次调用了 onCreate() –&gt; onStart() –&gt; onResume()。</p>
-<p>当按下home键时Logcat中可以看到：<br><img src="http://img.blog.csdn.net/20150519204431068" alt="Log2"><br>系统先后调用了 onPause() –&gt; onStop()。</p>
-<p>再次回到应用中时在Logcat中可以看到：<br><img src="http://img.blog.csdn.net/20150519204627409" alt="Log3"><br>系统先后调用了： onRestart() –&gt; onStart() –&gt; onResume()。</p>
-<p>当从MainActivity跳转到第二个Activity时Logcat：<br><img src="http://img.blog.csdn.net/20150519205015887" alt="Log4"><br>系统先后调用了 onPause() –&gt; onStop()。</p>
-<p>当界面旋转过来时：<br><img src="http://img.blog.csdn.net/20150519205219050" alt="Land"></p>
-<p>Logcat：<br><img src="http://img.blog.csdn.net/20150519205325709" alt="Log5"><br>系统先后调用了：onPause() –&gt; onStop() –&gt; onDestroy() –&gt; onCreate() –&gt; onStart() –&gt; onResume()。</p>
-<p>到此我们就基本上对Activity的生命周期有了一个初步的了解。</p>
+<pre><code>@Override
+    public boolean equals(Object o){
+        throw new AssertionError();//Method is never called
+    }
+</code></pre><p>那么，什么时候应该覆盖<code>Object.equals()</code>呢？如果类具有自己特有的“逻辑相等”概念（不同于对象等同的概念），而且超类还没有覆盖<code>equals</code>以实现期望的行为，这时我们就需要覆盖<code>equals</code>方法。这通常属于“值类（<code>value class</code>）”的情形。值类仅仅是一个表示值得类，例如<code>Integer</code>或者<code>Date</code>。</p>
+<p>有一种“值类”不需要覆盖<code>equals</code>方法，即用实例受控（见第1条）确保“每个值至多存在一个对象”的类。枚举就属于这种类。对于这样的类而言，逻辑相同与对象等同是一回事，因此<code>Object</code>的<code>equals</code>方法就等同与逻辑意义上的<code>equals</code>方法。</p>
+<p>在覆盖<code>equals</code>方法的时候，你必须遵守它的通用约定。下面是约定内容：<br>    <code>equals</code>方法实现等价关系：</p>
+<ul>
+<li><strong>自反性（reflexive）</strong>。对于任何非<code>null</code>的引用值<code>x</code>，<code>x.equals(x)</code>必须返回<code>true</code>。</li>
+<li><strong>对称性（symmetric）</strong>。对于任何非<code>null</code>的引用值<code>x</code>和<code>y</code>,当且仅当<code>y.equals(x)</code>返回<code>true</code>，<code>x.equals(y)</code>必须返回<code>true</code>。</li>
+<li><strong>传递性（transitive）</strong>。对于任何非<code>null</code>的引用值<code>x</code>，<code>y</code>和<code>z</code>，如果<code>x.equals(y)</code>返回<code>true</code>，并且<code>y.equals(z)</code>也返回<code>true</code>，那么<code>x.equals(z)</code>也返回<code>true</code>。</li>
+<li><strong>一致性（consistent）</strong>。对于任何非<code>null</code>的引用值<code>x</code>和<code>y</code>，只要<code>equals</code>的比较操作在对象中所用的信息没有被修改，多次调用<code>x.equals(y)</code>就会一致返回<code>true</code>，或者一致地返回<code>false</code>。</li>
+<li>对于任何非<code>null</code>的引用值<code>x</code>，<code>x.equals(null)</code>必须返回<code>false</code>。</li>
+</ul>
 
       
     </div>
@@ -321,13 +323,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/">Android Activity 的生命周期</a></p>
+        <p><span>本文标题:</span><a href="/2015/09/23/2015-09-23-Effective-Java-reading-notes/">Effective Java 读书笔记（三）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Sprite 的个人博客">Sprite</a></p>
-        <p><span>发布时间:</span>2015年08月24日 - 21时57分</p>
-        <p><span>最后更新:</span>2016年04月24日 - 22时25分</p>
+        <p><span>发布时间:</span>2015年09月23日 - 21时57分</p>
+        <p><span>最后更新:</span>2016年04月25日 - 10时41分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/" title="Android Activity 的生命周期">http://yoursite.com/2015/08/24/2015-08-24-Android-Activity-lifecycler/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/08/24/2015-08-24-Android-Activity-lifecycler/　　作者: Sprite" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/09/23/2015-09-23-Effective-Java-reading-notes/" title="Effective Java 读书笔记（三）">http://yoursite.com/2015/09/23/2015-09-23-Effective-Java-reading-notes/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/09/23/2015-09-23-Effective-Java-reading-notes/　　作者: Sprite" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -340,18 +342,18 @@
 
 <nav id="article-nav">
   
-    <a href="/2015/09/06/2015-09-04-Effective-Java-reading-notes/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/11/15/2015-11-15-Material-Design/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          Effective Java 读书笔记（一）
+          Material Design
         
       </div>
     </a>
   
   
-    <a href="/2015/06/01/2015-06-01-MVVM-on-Android/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">MVVM on Android</div>
+    <a href="/2015/09/19/2015-09-19-Effective-Java-reading-notes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Effective Java 读书笔记（二）</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -362,7 +364,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Android-Activity-的生命周期"><span class="toc-number">1.</span> <span class="toc-text">Android Activity 的生命周期</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Effective-Java-读书笔记（三）"><span class="toc-number">1.</span> <span class="toc-text">Effective Java 读书笔记（三）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第七条：避免使用终结方法"><span class="toc-number">1.0.1.</span> <span class="toc-text">第七条：避免使用终结方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第八条：覆盖equals时请遵守通用约定"><span class="toc-number">1.0.2.</span> <span class="toc-text">第八条：覆盖equals时请遵守通用约定</span></a></li></ol></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -424,7 +426,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2015/08/24/2015-08-24-Android-Activity-lifecycler/" data-title="Android Activity 的生命周期" data-url="http://yoursite.com/2015/08/24/2015-08-24-Android-Activity-lifecycler/"></div>
+    <div class="ds-thread" data-thread-key="2015/09/23/2015-09-23-Effective-Java-reading-notes/" data-title="Effective Java 读书笔记（三）" data-url="http://yoursite.com/2015/09/23/2015-09-23-Effective-Java-reading-notes/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -447,13 +449,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2015/09/06/2015-09-04-Effective-Java-reading-notes/" title="上一篇: Effective Java 读书笔记（一）">
+            <a href="/2015/11/15/2015-11-15-Material-Design/" title="上一篇: Material Design">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2015/06/01/2015-06-01-MVVM-on-Android/" title="下一篇: MVVM on Android">
+            <a href="/2015/09/19/2015-09-19-Effective-Java-reading-notes/" title="下一篇: Effective Java 读书笔记（二）">
                 <i class="fa fa-angle-right"></i>
             </a>
         
