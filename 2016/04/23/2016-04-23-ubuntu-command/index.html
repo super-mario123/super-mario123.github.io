@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>（转）Ubuntu 常用命令总结 | Sprite&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ubuntu 常用命令总结基本命令一帮助
+--help 简单的帮助
+help command 比较详细的帮助
+man command 最详细的帮助
+
+ls 命令
+ls -a 显示全部的文件及文件夹，包括隐藏的文件或文件夹
+ls -l 显示较全的文件信息，包括权限，用户，用户组等。
+ls --color 显示文件及文件夹，并标有不同的颜色。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（转）Ubuntu 常用命令总结">
+<meta property="og:url" content="http://yoursite.com/2016/04/23/2016-04-23-ubuntu-command/index.html">
+<meta property="og:site_name" content="Sprite's Blog">
+<meta property="og:description" content="Ubuntu 常用命令总结基本命令一帮助
+--help 简单的帮助
+help command 比较详细的帮助
+man command 最详细的帮助
+
+ls 命令
+ls -a 显示全部的文件及文件夹，包括隐藏的文件或文件夹
+ls -l 显示较全的文件信息，包括权限，用户，用户组等。
+ls --color 显示文件及文件夹，并标有不同的颜色。">
+<meta property="og:updated_time" content="2016-05-10T07:02:21.343Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="（转）Ubuntu 常用命令总结">
+<meta name="twitter:description" content="Ubuntu 常用命令总结基本命令一帮助
+--help 简单的帮助
+help command 比较详细的帮助
+man command 最详细的帮助
+
+ls 命令
+ls -a 显示全部的文件及文件夹，包括隐藏的文件或文件夹
+ls -l 显示较全的文件信息，包括权限，用户，用户组等。
+ls --color 显示文件及文件夹，并标有不同的颜色。">
+  
+    <link rel="alternative" href="/atom.xml" title="Sprite&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/coder.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">Sprite</a></h1>
+        </hgroup>
+
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives">所有文章</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/super-mario123" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/mario-sprite" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/u/1723942445" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl facebook" target="_blank" href="#" title="facebook">facebook</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Java/" style="font-size: 20px;">Java</a> <a href="/tags/MD/" style="font-size: 10px;">MD</a> <a href="/tags/MVVM/" style="font-size: 10px;">MVVM</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://gank.io/">Gank</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.vsay.cn/">DoubleV</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ccwebsite.com/">兮兮</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.dandyweng.com/">翁天信</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.plqblog.com/views/index.php">潘利强</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hankin.cn/">hankin</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.waydrow.com/">waydrow</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">爱跑步，爱垒码，爱Google，爱android，爱MD，格言：anyone can be anything.</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Sprite</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/coder.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Sprite</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives">所有文章</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/super-mario123" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/mario-sprite" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/u/1723942445" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="facebook" target="_blank" href="#" title="facebook">facebook</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-2016-04-23-ubuntu-command" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/23/2016-04-23-ubuntu-command/" class="article-date">
+      <time datetime="2016-04-23T05:57:12.000Z" itemprop="datePublished">2016-04-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      （转）Ubuntu 常用命令总结
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Ubuntu-常用命令总结"><a href="#Ubuntu-常用命令总结" class="headerlink" title="Ubuntu 常用命令总结"></a>Ubuntu 常用命令总结</h1><h3 id="基本命令一"><a href="#基本命令一" class="headerlink" title="基本命令一"></a>基本命令一</h3><h4 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h4><ul>
+<li><code>--help</code> 简单的帮助</li>
+<li><code>help command</code> 比较详细的帮助</li>
+<li><code>man command</code> 最详细的帮助</li>
+</ul>
+<h4 id="ls-命令"><a href="#ls-命令" class="headerlink" title="ls 命令"></a>ls 命令</h4><ul>
+<li><code>ls -a</code> 显示全部的文件及文件夹，包括隐藏的文件或文件夹</li>
+<li><code>ls -l</code> 显示较全的文件信息，包括权限，用户，用户组等。</li>
+<li><code>ls --color</code> 显示文件及文件夹，并标有不同的颜色。</li>
+</ul>
+<a id="more"></a>
+<h4 id="tab键"><a href="#tab键" class="headerlink" title="tab键"></a>tab键</h4><ul>
+<li><code>tab command</code> 用于当你的命令记不全时，输入一部分按tab进行补全，如果有多个前面部分一样的则按两次tab键</li>
+</ul>
+<h4 id="alias"><a href="#alias" class="headerlink" title="alias"></a>alias</h4><ul>
+<li><code>alias ubuntu=“ls”</code>用于为一个命令取别名。当你输入<code>ubuntu</code>时等价于输入了<code>ls</code>命令</li>
+</ul>
+<h3 id="基本命令二"><a href="#基本命令二" class="headerlink" title="基本命令二"></a>基本命令二</h3><h4 id="which"><a href="#which" class="headerlink" title="which"></a>which</h4><ul>
+<li><code>which command</code>用于查找你所执行的命令文件存放的目录。<h4 id="env"><a href="#env" class="headerlink" title="env"></a>env</h4></li>
+<li>当前用户的运行环境<h4 id="echo"><a href="#echo" class="headerlink" title="echo"></a>echo</h4></li>
+<li><code>echo $PSTH</code> 查看环境变量的路径有哪些，<code>which</code>命令使用就是在环境变量的目录里面查找命令文件所存放的目录，从前到后。<h4 id="cmp"><a href="#cmp" class="headerlink" title="cmp"></a>cmp</h4></li>
+<li><code>cmp /bin/ls/bin/dir</code>用于比较两个文件是否完全相同。<h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4></li>
+<li><code>cp /bin/ls /bin/a</code>用于复制文件的命令。这时就复制了一个命令文件，就可以运行<code>a</code>命令，与<code>ls</code>用法相同。</li>
+</ul>
+<h4 id="drwxr-xr-x"><a href="#drwxr-xr-x" class="headerlink" title="drwxr-xr-x"></a>drwxr-xr-x</h4><ul>
+<li>前面的<code>d</code>表示一个文件夹，若为<code>-</code>表示是一个文件。</li>
+<li><code>rwx</code>表示文件所有者拥有读写执行的权限</li>
+<li><code>r-x</code>表示文件所有者所在组的权限 读执行的权限</li>
+<li><code>r-x</code>表示其他人所拥有的权限 读执行的权限。</li>
+</ul>
+<h4 id="chmod"><a href="#chmod" class="headerlink" title="chmod"></a>chmod</h4><ul>
+<li>用于改为用户对于文件的操作权限。<code>chmod 0+r</code> 添加读的权限。<code>sudo chmod 0-r filename</code>取消读的权限。</li>
+</ul>
+<h4 id="lsattr"><a href="#lsattr" class="headerlink" title="lsattr"></a>lsattr</h4><ul>
+<li>用于显示并设置用户文件及目录的高级属性。</li>
+</ul>
+<h4 id="lsusb"><a href="#lsusb" class="headerlink" title="lsusb"></a>lsusb</h4><ul>
+<li>用于列出计算机里的<code>usb</code>设备。</li>
+</ul>
+<h4 id="lspci"><a href="#lspci" class="headerlink" title="lspci"></a>lspci</h4><ul>
+<li>用于列出计算机里的<code>pci</code>设备。</li>
+</ul>
+<h4 id="lsmod"><a href="#lsmod" class="headerlink" title="lsmod"></a>lsmod</h4><ul>
+<li><code>linux</code>下的驱动有两种形式。一种是加载到内核中的，另一种是以模块化的形式出现的。<code>lsmod</code>就是用于列出计算机里的驱动模块。</li>
+</ul>
+<h3 id="基本命令三"><a href="#基本命令三" class="headerlink" title="基本命令三"></a>基本命令三</h3><h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h4><ul>
+<li><code>cat</code>命令就是用于查看<code>ubuntu</code>中文本文件的内容的命令。</li>
+<li><code>cat /proc/cpuinfo</code>用于查看计算机的<code>cpu</code>的信息。</li>
+<li><code>cat /proc/meminfo</code>用于查看计算机的内在信息。</li>
+<li><code>cat /etc/issue</code>查看<code>ubuntu</code>的版本信息。</li>
+</ul>
+<h4 id="free"><a href="#free" class="headerlink" title="free"></a>free</h4><ul>
+<li><code>free</code>命令也是用来查看<code>ubuntu</code>计算机中的内在信息的。</li>
+</ul>
+<h4 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h4><ul>
+<li><code>ubuntu</code>中的<code>grep</code>命令是用来过滤出一个文件中对自己有用的信息的。</li>
+<li><code>cat /proc/meminfo |grep Mem Total</code>用于过滤出内存中的内存大小。</li>
+</ul>
+<h4 id="more"><a href="#more" class="headerlink" title="more"></a>more</h4><ul>
+<li><code>ubuntu</code>中的<code>more</code>命令是用于将结果分页显示。<code>ls -a |more</code>用于分页显示。</li>
+</ul>
+<h4 id="fdisk"><a href="#fdisk" class="headerlink" title="fdisk"></a>fdisk</h4><ul>
+<li><code>ubuntu</code>中查看硬盘信息的命令用fdisk。</li>
+</ul>
+<h4 id="uname"><a href="#uname" class="headerlink" title="uname"></a>uname</h4><ul>
+<li><code>ubuntu</code>中查看内核版本的命令是<code>uname -a</code>,只是输入<code>uname</code>则会输出<code>linux</code>作为结果。</li>
+</ul>
+<h3 id="文件操作命令："><a href="#文件操作命令：" class="headerlink" title="文件操作命令："></a>文件操作命令：</h3><h4 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h4><ul>
+<li>格式：ls dir</li>
+<li>ls命令用于显示文件下有哪些文件。<h4 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h4></li>
+<li>格式：<code>touch test1 test2 test3</code></li>
+<li><code>touch</code>命令用于创建文件，可以同一时间创建多个文件。</li>
+</ul>
+<h4 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h4><ul>
+<li>格式：<code>rm filename</code> </li>
+<li><code>rm</code>命令用于删除文件，当文件不能够被删除时可以加上<code>-f</code>选项，强制将文件删除。</li>
+</ul>
+<h4 id="cat-1"><a href="#cat-1" class="headerlink" title="cat"></a>cat</h4><ul>
+<li>格式：<code>cat /proc/cpuinfo</code></li>
+<li>cat命令用于查看文件内的信息。如果只想查看某一项内容时，要加上<code>grep</code>选项。<br>  <p>例如：<code>cat /proc/meminfo |grep MemTotal</code></p></li>
+</ul>
+<h4 id="less"><a href="#less" class="headerlink" title="less"></a>less</h4><ul>
+<li>格式：<code>less /proc/meminfo</code></li>
+<li>less命令也是用来查看文件的内容的命令，但是他显示时是一屏一屏的显示的。<ul>
+<li>按下空格键后进入到下一屏。</li>
+<li>还可以通过上下键来上下移动行。</li>
+<li>按下<code>q</code>键后退出查看。</li>
+</ul>
+</li>
+</ul>
+<h4 id="more-1"><a href="#more-1" class="headerlink" title="more"></a>more</h4><ul>
+<li>格式：<code>more /proc/meminfo</code></li>
+<li><code>more</code>命令与<code>less</code>命令一样用于查看文件的内容，同样是分屏显示的。<ul>
+<li>按下空格键狗进入到下一屏</li>
+<li>按下<code>q</code>键后退出查看</li>
+</ul>
+</li>
+</ul>
+<h4 id="cp-1"><a href="#cp-1" class="headerlink" title="cp"></a>cp</h4><ul>
+<li>格式：<code>cp /etc/apt/source.list /etc/aptsources.listbacker</code></li>
+<li><code>cp</code>是copy的缩写用于复制文件。</li>
+</ul>
+<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><ul>
+<li>格式：<code>mv /home/user1 /usr/share/bin</code></li>
+<li><code>mv</code>命令是用于移动文件的。</li>
+</ul>
+<h4 id="find"><a href="#find" class="headerlink" title="find"></a>find</h4><ul>
+<li>格式：<code>sudo find / -name ls</code></li>
+<li><code>find</code>命令是用于查找文件：<ul>
+<li><code>/</code>表示的是查找的根目录，</li>
+<li>-name有了这个选项，在显示只有找到的结果才会显示出来。</li>
+<li><code>ls</code>为你要找的目录文件。</li>
+</ul>
+</li>
+</ul>
+<h3 id="目录操作命令"><a href="#目录操作命令" class="headerlink" title="目录操作命令"></a>目录操作命令</h3><h4 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h4><ul>
+<li>格式：<code>mkdir home/usr/file</code></li>
+<li><code>mkdir</code>命令使用来创建目录的。<ul>
+<li><code>home/usr/</code>这是一个目录，既可以是一个绝对路径，也可以是一个相对路径。</li>
+<li>如果在当前目录下也可以创建多个文件。如：<code>mkdir f2 f3 f4</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="rm-1"><a href="#rm-1" class="headerlink" title="rm"></a>rm</h4><ul>
+<li>格式：<code>rm rf test/f2 test/f3</code></li>
+<li><code>rm</code>命令与操作文件一样是用来删除的。<ul>
+<li><code>rf</code> 有<code>r</code>可以将目录与其子目录一起删除，<code>f</code>是用来强制删除的。</li>
+<li><code>test/f2 test/f3</code>是同时删除多个文件。</li>
+</ul>
+</li>
+</ul>
+<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><ul>
+<li>格式：pwd</li>
+<li><code>pwd</code>命令是用来指出当前所在的路径。是<code>print working directory</code>的缩写。</li>
+</ul>
+<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4><ul>
+<li>格式：cd ..</li>
+<li><code>cd</code>命令是用来改变当前目录的。<ul>
+<li><code>..</code>表示回到父目录，<code>.</code>表示当前目录。</li>
+<li><code>-</code>表示回到上一次所使用的目录。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ls-1"><a href="#ls-1" class="headerlink" title="ls"></a>ls</h4><ul>
+<li>格式：<code>ls</code>目录名</li>
+<li><code>ls</code>命令是用来查看目录里面所拥有的子目录与文件有哪些。</li>
+</ul>
+<h4 id="cp-2"><a href="#cp-2" class="headerlink" title="cp"></a>cp</h4><ul>
+<li>格式：<code>cp -r</code>源目录名 目标目录名</li>
+<li><code>cp</code>命令与操作文件一样是用来复制的，带<code>r</code>表示将其子目录一起复制。</li>
+</ul>
+<h4 id="mv-1"><a href="#mv-1" class="headerlink" title="mv"></a>mv</h4><ul>
+<li>格式:<code>mv</code> 源目录名 目标目录名</li>
+<li><code>mv</code>命令与操作文件是用来移动，当源目录与目标目录在同一个父目录下表示改名。</li>
+</ul>
+<h4 id="find-1"><a href="#find-1" class="headerlink" title="find"></a>find</h4><ul>
+<li>格式：<code>find</code>起始目录<code>-name</code>要找的目录</li>
+<li><code>find</code>命令与操作文件一样使用来查找的。</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/04/23/2016-04-23-ubuntu-command/">（转）Ubuntu 常用命令总结</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Sprite 的个人博客">Sprite</a></p>
+        <p><span>发布时间:</span>2016年04月23日 - 13时57分</p>
+        <p><span>最后更新:</span>2016年05月10日 - 15时02分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/04/23/2016-04-23-ubuntu-command/" title="（转）Ubuntu 常用命令总结">http://yoursite.com/2016/04/23/2016-04-23-ubuntu-command/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/23/2016-04-23-ubuntu-command/　　作者: Sprite" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/21/2015-11-21-Git-Flow/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">（转载）Git 常用命令和 Git Flow 梳理</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu-常用命令总结"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu 常用命令总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本命令一"><span class="toc-number">1.0.1.</span> <span class="toc-text">基本命令一</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#帮助"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">帮助</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ls-命令"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">ls 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tab键"><span class="toc-number">1.0.1.3.</span> <span class="toc-text">tab键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#alias"><span class="toc-number">1.0.1.4.</span> <span class="toc-text">alias</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本命令二"><span class="toc-number">1.0.2.</span> <span class="toc-text">基本命令二</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#which"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">which</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#env"><span class="toc-number">1.0.2.2.</span> <span class="toc-text">env</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#echo"><span class="toc-number">1.0.2.3.</span> <span class="toc-text">echo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cmp"><span class="toc-number">1.0.2.4.</span> <span class="toc-text">cmp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp"><span class="toc-number">1.0.2.5.</span> <span class="toc-text">cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#drwxr-xr-x"><span class="toc-number">1.0.2.6.</span> <span class="toc-text">drwxr-xr-x</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod"><span class="toc-number">1.0.2.7.</span> <span class="toc-text">chmod</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lsattr"><span class="toc-number">1.0.2.8.</span> <span class="toc-text">lsattr</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lsusb"><span class="toc-number">1.0.2.9.</span> <span class="toc-text">lsusb</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lspci"><span class="toc-number">1.0.2.10.</span> <span class="toc-text">lspci</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#lsmod"><span class="toc-number">1.0.2.11.</span> <span class="toc-text">lsmod</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本命令三"><span class="toc-number">1.0.3.</span> <span class="toc-text">基本命令三</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cat"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#free"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">free</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#grep"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">grep</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#more"><span class="toc-number">1.0.3.4.</span> <span class="toc-text">more</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#fdisk"><span class="toc-number">1.0.3.5.</span> <span class="toc-text">fdisk</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#uname"><span class="toc-number">1.0.3.6.</span> <span class="toc-text">uname</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件操作命令："><span class="toc-number">1.0.4.</span> <span class="toc-text">文件操作命令：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ls"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">ls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#touch"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">touch</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cat-1"><span class="toc-number">1.0.4.4.</span> <span class="toc-text">cat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#less"><span class="toc-number">1.0.4.5.</span> <span class="toc-text">less</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#more-1"><span class="toc-number">1.0.4.6.</span> <span class="toc-text">more</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-1"><span class="toc-number">1.0.4.7.</span> <span class="toc-text">cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv"><span class="toc-number">1.0.4.8.</span> <span class="toc-text">mv</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#find"><span class="toc-number">1.0.4.9.</span> <span class="toc-text">find</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录操作命令"><span class="toc-number">1.0.5.</span> <span class="toc-text">目录操作命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mkdir"><span class="toc-number">1.0.5.1.</span> <span class="toc-text">mkdir</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rm-1"><span class="toc-number">1.0.5.2.</span> <span class="toc-text">rm</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pwd"><span class="toc-number">1.0.5.3.</span> <span class="toc-text">pwd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cd"><span class="toc-number">1.0.5.4.</span> <span class="toc-text">cd</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ls-1"><span class="toc-number">1.0.5.5.</span> <span class="toc-text">ls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#cp-2"><span class="toc-number">1.0.5.6.</span> <span class="toc-text">cp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mv-1"><span class="toc-number">1.0.5.7.</span> <span class="toc-text">mv</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#find-1"><span class="toc-number">1.0.5.8.</span> <span class="toc-text">find</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/04/23/2016-04-23-ubuntu-command/" data-title="（转）Ubuntu 常用命令总结" data-url="http://yoursite.com/2016/04/23/2016-04-23-ubuntu-command/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"sprite"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2015/11/21/2015-11-21-Git-Flow/" title="下一篇: （转载）Git 常用命令和 Git Flow 梳理">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/04/23/2016-04-23-ubuntu-command/">（转）Ubuntu 常用命令总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/21/2015-11-21-Git-Flow/">（转载）Git 常用命令和 Git Flow 梳理</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/11/15/2015-11-15-Material-Design/">Material Design</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/23/2015-09-23-Effective-Java-reading-notes/">Effective Java 读书笔记（三）</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/19/2015-09-19-Effective-Java-reading-notes/">Effective Java 读书笔记（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/09/06/2015-09-04-Effective-Java-reading-notes/">Effective Java 读书笔记（一）</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/08/24/2015-08-24-Android-Activity-lifecycler/">Android Activity 的生命周期</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/06/01/2015-06-01-MVVM-on-Android/">MVVM on Android</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 Sprite
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >海贼到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
